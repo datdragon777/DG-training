@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    --main-color : #EBCB80;
+    --white-color: #FFFFFF;
+}
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family    : 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Main */
+#header {
+
+    padding-top: 50%;
+    background : url('/assets/img/background.png') top center / cover no-repeat;
+}
+
+#nav-bar {
+    position       : absolute;
+    width          : 100%;
+    height         : 45px;
+    top            : 25px;
+    display        : flex;
+    justify-content: space-between;
+    padding        : 0 150px;
+}
+
+.logo {
+    width         : 40px;
+    height        : 43px;
+    font-family   : 'Roboto', sans-serif;
+    font-style    : normal;
+    font-weight   : 900;
+    font-size     : 36px;
+    line-height   : 42px;
+    color         : var(--main-color);
+    display       : flex;
+    align-items   : flex-end;
+    text-align    : center;
+    letter-spacing: 0.0554719em;
+}
+
+.menu-container {
+    color          : var(--white-color);
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    width          : 40%;
+}
+
+.nav-container {
+    display        : flex;
+    height         : 45px;
+    justify-content: space-between;
+    align-items    : center;
+    gap            : 37px;
+    list-style     : none;
+}
+
+.nav-container .nav-item-route {
+    font-weight   : 700;
+    font-size     : 18px;
+    line-height   : 21px;
+    display       : flex;
+    align-items   : flex-end;
+    letter-spacing: 0.0555556em;
+}
+
+.nav-search-switch {
+    display    : flex;
+    align-items: center;
+    gap        : 30px;
+}
+
+.icon-search {
+    font-size  : 18px;
+    font-weight: 600;
+}
+
+.nav-search-switch .switch-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 70px;
+    height         : 40px;
+    border         : 2px solid #FFFFFF;
+    box-sizing     : border-box;
+    border-radius  : 50px;
+    gap            : 6px;
+}
+
+.switch-container .switch-language {
+    font-family   : Roboto;
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 18px;
+    letter-spacing: 0.0555556em;
+}
